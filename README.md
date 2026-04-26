@@ -23,8 +23,6 @@ tags:
 
 **Pitch video:** replace this line with the public YouTube link before final submission.
 
-**Video script draft:** [`VIDEO_SCRIPT.md`](VIDEO_SCRIPT.md)
-
 ModelForge is an OpenEnv environment for training LLM agents to behave like practical ML engineers. On reset, the agent receives a dataset description: feature count, class names, class distribution, sample rows, and a majority-class baseline. On each step, it submits Python training code. The environment executes the code, evaluates the trained model on a held-out test split, and returns real metrics plus a multi-signal reward.
 
 The goal is not just to tune a hyperparameter. The agent has to read the shape of a dataset, choose an appropriate sklearn pipeline, avoid overfitting, recover from failed code, and improve over a baseline.
@@ -147,13 +145,13 @@ The final notebook uses Hugging Face Transformers, TRL, and PEFT LoRA:
 
 Observed submit-run trend from `training/AutoLearn_SUBMIT.ipynb`:
 
-| Stage | Average accuracy |
-|---|---:|
-| Base Qwen 1.5B | 0.846 |
-| After SFT | 0.875 |
-| After DPO | 0.929 |
+| Stage | Success | Avg accuracy | Avg reward |
+|---|---:|---:|---:|
+| Base Qwen 1.5B | 39/42 | 0.876 | 0.564 |
+| After SFT | 13/14 | 0.867 | 0.554 |
+| After DPO | 14/14 | 0.853 | 0.588 |
 
-The notebook saves accuracy, reward, per-dataset comparison, and SFT/DPO loss plots to `autolearn_results.png` when run.
+The clearest improvement is reliability and reward: the final DPO model reached a 100% execution success rate on the evaluation episodes and the highest average reward. The transfer check also showed the trained model matching or improving the base model on held-out seeds for circles and wine. The notebook includes the real result table, reward curve, per-dataset comparison, and SFT/DPO loss plot.
 
 ## Run Locally
 
