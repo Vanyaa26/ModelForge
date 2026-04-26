@@ -21,7 +21,7 @@ tags:
 
 **Training notebook:** [`training/AutoLearn_SUBMIT.ipynb`](training/AutoLearn_SUBMIT.ipynb)
 
-**Pitch video:** replace this line with the public YouTube link before final submission.
+**Pitch video:** https://youtube.com/shorts/3yae60HULfQ?feature=share
 
 ModelForge is an OpenEnv environment for training LLM agents to behave like practical ML engineers. On reset, the agent receives a dataset description: feature count, class names, class distribution, sample rows, and a majority-class baseline. On each step, it submits Python training code. The environment executes the code, evaluates the trained model on a held-out test split, and returns real metrics plus a multi-signal reward.
 
