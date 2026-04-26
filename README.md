@@ -153,6 +153,10 @@ Observed submit-run trend from `training/AutoLearn_SUBMIT.ipynb`:
 
 The clearest improvement is reliability and reward: the final DPO model reached a 100% execution success rate on the evaluation episodes and the highest average reward. The transfer check also showed the trained model matching or improving the base model on held-out seeds for circles and wine. The notebook includes the real result table, reward curve, per-dataset comparison, and SFT/DPO loss plot.
 
+![ModelForge training plots](assets/modelforge_training_plots.png)
+
+The plot above shows the submit-run accuracy/success trend, reward curve, per-dataset comparison, and SFT/DPO training loss from a real run of `training/AutoLearn_SUBMIT.ipynb`.
+
 ## Run Locally
 
 Install dependencies from this environment directory:
