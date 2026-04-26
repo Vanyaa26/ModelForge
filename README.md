@@ -15,7 +15,7 @@ tags:
 
 # ModelForge: A Model That Learns to Train Models
 
-**Hugging Face Space:** https://huggingface.co/spaces/vanyatentiwala/modelforge
+**Hugging Face Space:** https://huggingface.co/spaces/Vannziiee/modelforge
 
 **GitHub repository:** https://github.com/Vanyaa26/ModelForge.git
 
@@ -195,7 +195,7 @@ It installs the needed training dependencies, builds the environment loop, runs 
 From this directory:
 
 ```bash
-openenv push --repo-id vanyatentiwala/modelforge
+openenv push --repo-id Vannziiee/modelforge
 ```
 
 Before submitting, verify that the README contains the final public HF Space link and the public video or blog link.
