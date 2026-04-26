@@ -149,7 +149,6 @@ def web():
           <div class="links">
             <a href="/docs">API Docs</a>
             <a href="/health">Health</a>
-            <a href="https://github.com/Vanyaa26/ModelForge">GitHub</a>
           </div>
         </main>
       </body>
